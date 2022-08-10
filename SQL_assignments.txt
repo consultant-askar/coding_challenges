@@ -1,0 +1,32 @@
+select * from employee 
+select last_name , title, address from employee e 
+select * from employee e2 where last_name = 'King' 
+select * from employee e3 where first_name = 'Andrew' and reports_to = null 
+select * from employee e4 where reports_to = null 
+-- ORDER by 
+select * from album a order by title desc 
+select * from customer c 
+select * from employee e5 
+insert into employee (employee_id,last_name,first_name,title,reports_to,birth_date) values (9,'Mohammed','Askar','Develoer',6, '2000-05-05')
+--INSERT INTO
+select * from employee e6 where last_name = 'Mohammed'
+--UPDATE
+select * from customer c2 where last_name = 'Mitchell'
+update customer set last_name ='Walter', first_name = 'Robert' where last_name = 'Mitchell'
+select * from customer c3 order by first_name desc 
+--DELETE 
+delete from customer c4 where first_name = 'Phil'
+select * from employee e7 
+delete from employee e8 where last_name = 'King'
+delete from employee e8 where last_name = 'Mohammed'
+select count(*) from invoice i 
+--STORED PROCEDURES
+create procedure x
+
+as
+
+select * from employee ;
+
+exec x;
+-- SQL FUNCTION
+SELECT CURRENT_DATE;
